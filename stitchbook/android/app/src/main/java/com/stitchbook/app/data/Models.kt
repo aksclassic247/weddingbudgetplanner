@@ -42,6 +42,14 @@ data class Content(
     fun pattern(id: String) = patterns.firstOrNull { it.id == id }
 }
 
+/** A counter that follows another counter, for example "repeats" of an 8-row pattern. */
+data class RepeatCounter(
+    val id: String,
+    val name: String,
+    val sourceId: String,
+    val rowsPerRepeat: Int,
+)
+
 /** One project a person started from a pattern. Saved on the device. */
 data class Project(
     val id: String,
@@ -50,4 +58,9 @@ data class Project(
     val done: List<Boolean>,
     val notes: String = "",
     val counters: List<RowCounter> = emptyList(),
+    val repeats: List<RepeatCounter> = emptyList(),
+    val reminderHour: Int? = null,
+    val reminderMinute: Int? = null,
+    val pdfs: List<String> = emptyList(),
+    val photos: List<String> = emptyList(),
 )

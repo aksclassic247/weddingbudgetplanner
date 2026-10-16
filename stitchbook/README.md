@@ -9,7 +9,8 @@ See [docs/review-analysis.md](docs/review-analysis.md) for the user reviews this
 - **Home**: a welcome card, your latest project, quick links, and beginner tutorials.
 - **Learn**: step-by-step tutorials for knitting and crochet, and an abbreviations guide.
 - **Patterns**: pattern cards filtered by skill level. Start a pattern to make a project.
-- **Projects**: a checklist for each round, a "Check my count" tool, row counters with optional targets, and notes. Saved on the device.
+- **Projects**: a checklist for each round, a "Check my count" tool, row counters with optional targets, repeat counters that follow a row counter, daily reminders, progress photos, your own PDF patterns, and notes. Saved on the device.
+- **Backup**: export all projects to a file and restore them on another phone or tablet. Photos and PDFs are not in the backup file.
 - **Tools**: a shaping calculator that works out where to place increases or decreases evenly across a row, and a yarn estimate that tells you how many balls to buy from the label.
 - **Search**: find patterns by name or craft, and filter by skill level.
 - **Credits**: every sample pattern says who wrote it and that it has not been test-made yet.
@@ -69,13 +70,16 @@ Then pick a simulator and press **Run**. To run on your own iPhone, set your Tea
 
 ## Verification status
 
-- `android/core` (shaping, counters, stitch check, progress, yarn estimate): 16 unit tests pass.
+- `android/core` (shaping, counters, stitch check, progress, yarn estimate, repeat counters, reminder timing): 23 unit tests pass.
 - The Android app and iOS app were written but could not be compiled in the environment used to build them. Neither the Android SDK nor Xcode was available there. Build them in Android Studio and Xcode before you rely on them.
+
+## Permissions
+
+- **Notifications** (for reminders). Android asks at runtime on Android 13 and newer. iOS asks the first time you turn a reminder on.
+- **Photos and PDFs** use the system pickers, so the app never sees your whole library and asks for no photo permission.
+- **Camera** is not used.
 
 ## Not built yet
 
-- **Row reminders.** Needs notification permission on both platforms.
-- **Importing your own PDF patterns.** Needs a PDF reader on both platforms.
-- **Photos on projects.** Needs camera and photo library access.
-- **Syncing between devices.** Needs accounts and a server.
-- **Linked counters.** Counters work one at a time for now.
+- **Cloud sync with accounts.** Backup and restore work between devices by sharing a file. Automatic sync needs a backend and an account system. Tell me which you want (for example Firebase, Supabase, or your own server), and I'll connect it.
+- **Photos and PDFs in backups.** Only project data is backed up for now.

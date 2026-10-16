@@ -55,7 +55,23 @@ struct StitchContent: Codable {
     func tutorial(id: String) -> Tutorial? { tutorials.first { $0.id == id } }
 }
 
+/// A counter that follows another counter, for example "repeats" of an 8-row pattern.
+struct RepeatCounter: Codable, Equatable, Identifiable {
+    let id: UUID
+    let name: String
+    let sourceCounterId: UUID
+    let rowsPerRepeat: Int
+
+    init(name: String, sourceCounterId: UUID, rowsPerRepeat: Int) {
+        self.id = UUID()
+        self.name = name
+        self.sourceCounterId = sourceCounterId
+        self.rowsPerRepeat = rowsPerRepeat
+    }
+}
+
 /// One project started from a pattern. Saved on the device.
+/// Newer fields are optional so projects saved by older versions still load.
 struct Project: Codable, Identifiable, Equatable {
     let id: String
     let patternId: String
@@ -63,4 +79,13 @@ struct Project: Codable, Identifiable, Equatable {
     var done: [Bool]
     var notes: String
     var counters: [RowCounter]
+    var repeats: [RepeatCounter]? = nil
+    var reminderHour: Int? = nil
+    var reminderMinute: Int? = nil
+    var pdfs: [String]? = nil
+    var photos: [String]? = nil
+
+    var repeatCounters: [RepeatCounter] { repeats ?? [] }
+    var pdfFiles: [String] { pdfs ?? [] }
+    var photoFiles: [String] { photos ?? [] }
 }

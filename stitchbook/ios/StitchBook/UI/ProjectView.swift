@@ -79,6 +79,8 @@ struct ProjectView: View {
                         .overlay(RoundedRectangle(cornerRadius: 14).stroke(Palette.coral, lineWidth: 1.5))
                 }
 
+                ProjectExtrasSection(projectId: projectId, patternTitle: pattern.title)
+
                 Text("Notes").font(.title3.weight(.bold)).foregroundStyle(Palette.ink)
                 TextEditor(text: Binding(
                     get: { project.notes },

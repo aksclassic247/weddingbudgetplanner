@@ -51,10 +51,11 @@ Taken from competitor listings (see the sources above):
 - iOS haptic feedback on every counter tap, matching Android.
 - App icon placeholder for iOS.
 
-## Features we did not build yet
+## Status of the requested features
 
-- Row reminders with notifications.
-- Importing your own PDF patterns.
-- Photos on each project.
-- Syncing projects between your phone and a tablet.
-- Patterns for a wider range of skill levels, with credits for each designer.
+- **Row reminders:** built. A daily reminder per project, with a notification permission request.
+- **Your own PDF patterns:** built. Pick a PDF from your files and view it in the app.
+- **Photos on projects:** built. Pick photos with the system picker; they stay on the device.
+- **Syncing between devices:** partly built. Backup and restore share a file between devices. Automatic sync needs a backend and an account decision.
+- **Linked counters:** built as repeat counters. One counter follows another, so a pattern repeat of 8 rows counts repeats automatically.
+- **Icons:** placeholder yarn-ball icons on both platforms.

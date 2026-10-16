@@ -8,6 +8,7 @@ data class RowCounter(
     val name: String,
     val count: Int = 0,
     val target: Int? = null,
+    val id: String = java.util.UUID.randomUUID().toString(),
 ) {
     init {
         require(name.isNotBlank()) { "A counter needs a name." }

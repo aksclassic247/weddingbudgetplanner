@@ -181,6 +181,8 @@ private fun ProjectBody(vm: ProjectsViewModel, project: Project, pattern: Patter
             Text("Add counter")
         }
 
+        ProjectExtras(vm, project)
+
         Text("Notes", style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold, color = Ink)
         OutlinedTextField(
             value = project.notes,
