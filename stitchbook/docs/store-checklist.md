@@ -4,7 +4,7 @@ Work through this before you submit to Google Play or the App Store.
 
 ## Things only you can provide
 
-- [ ] **App icon.** The current icon is a placeholder. Use a designed 1024 by 1024 icon. Android also needs the adaptive icon layers replaced.
+- [x] **App icon.** Artwork from ChatGPT is in place on both platforms: a 1024 by 1024 opaque icon for iOS and a 432 by 432 transparent foreground for Android (background is coral #E76F5E). Check that your ChatGPT plan's terms allow commercial use of the image.
 - [ ] **Bundle IDs.** `com.stitchbook.app` is a placeholder. Register your own ID with Google Play and with Apple Developer, then change it in `android/app/build.gradle.kts` and `ios/project.yml`.
 - [ ] **Support email.** Set it in `android/app/src/main/java/com/stitchbook/app/support/Support.kt` and `ios/StitchBook/Support/Support.swift`.
 - [ ] **Privacy policy URL.** Publish `docs/privacy-policy.md` at a public web address (for example GitHub Pages) and paste that link into both stores.
