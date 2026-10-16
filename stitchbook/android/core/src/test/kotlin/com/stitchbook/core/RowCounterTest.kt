@@ -4,6 +4,7 @@ import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertFalse
 import kotlin.test.assertNull
+import kotlin.test.assertNull
 import kotlin.test.assertTrue
 
 class RowCounterTest {
@@ -30,5 +31,34 @@ class RowCounterTest {
     @Test
     fun countersWithoutTargetHaveNoProgress() {
         assertNull(RowCounter("Repeats").increment().progress)
+    }
+
+    @Test
+    fun undoReversesTheLastChange() {
+        val counter = RowCounter("Rows", count = 5).increment()
+        assertEquals(6, counter.count)
+        assertEquals(5, counter.undo().count)
+    }
+
+    @Test
+    fun undoOnlyRemembersOneStep() {
+        val counter = RowCounter("Rows").increment().increment().increment()
+        val undone = counter.undo()
+        assertEquals(2, undone.count)
+        assertNull(undone.undo().previousCount)
+        assertEquals(2, undone.undo().count)
+    }
+
+    @Test
+    fun undoAfterResetReturnsTheOldCount() {
+        val counter = RowCounter("Rows", count = 7).reset()
+        assertEquals(0, counter.count)
+        assertEquals(7, counter.undo().count)
+    }
+
+    @Test
+    fun tapAtZeroIsNotRecorded() {
+        val counter = RowCounter("Rows").decrement()
+        assertNull(counter.previousCount)
     }
 }

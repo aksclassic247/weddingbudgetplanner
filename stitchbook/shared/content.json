@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "note": "Shared content for the Android and iOS apps. Keep both platforms reading this one file.",
   "tutorials": [
     {
@@ -306,7 +306,9 @@
           "stitches": null
         }
       ],
-      "credit": "Drafted with AI help by the StitchBook team. Not yet test-made by a person. Check every stitch count before you start, and tell us if something is wrong."
+      "credit": "Drafted with AI help by the StitchBook team. Not yet test-made by a person. Check every stitch count before you start, and tell us if something is wrong.",
+      "testedOn": null,
+      "testedBy": null
     },
     {
       "id": "garter-scarf",
@@ -344,7 +346,9 @@
           "stitches": null
         }
       ],
-      "credit": "Drafted with AI help by the StitchBook team. Not yet test-made by a person. Check every stitch count before you start, and tell us if something is wrong."
+      "credit": "Drafted with AI help by the StitchBook team. Not yet test-made by a person. Check every stitch count before you start, and tell us if something is wrong.",
+      "testedOn": null,
+      "testedBy": null
     },
     {
       "id": "ribbed-beanie",
@@ -428,7 +432,9 @@
           "stitches": null
         }
       ],
-      "credit": "Drafted with AI help by the StitchBook team. Not yet test-made by a person. Check every stitch count before you start, and tell us if something is wrong."
+      "credit": "Drafted with AI help by the StitchBook team. Not yet test-made by a person. Check every stitch count before you start, and tell us if something is wrong.",
+      "testedOn": null,
+      "testedBy": null
     },
     {
       "id": "granny-square-pouch",
@@ -461,7 +467,9 @@
           "stitches": null
         }
       ],
-      "credit": "Drafted with AI help by the StitchBook team. Not yet test-made by a person. Check every stitch count before you start, and tell us if something is wrong."
+      "credit": "Drafted with AI help by the StitchBook team. Not yet test-made by a person. Check every stitch count before you start, and tell us if something is wrong.",
+      "testedOn": null,
+      "testedBy": null
     }
   ]
 }

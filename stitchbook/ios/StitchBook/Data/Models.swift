@@ -43,6 +43,14 @@ struct Pattern: Codable, Identifiable, Hashable {
     let gauge: String?
     let credit: String?
     let steps: [PatternStep]
+    let testedOn: String?
+    let testedBy: String?
+
+    /// What the pattern screen shows about testing. Stays "Untested draft" until a tester fills in both fields.
+    var testLabel: String {
+        guard let testedOn, !testedOn.isEmpty else { return "Untested draft" }
+        return "Tested on \(testedOn) by \(testedBy ?? "a tester")"
+    }
 }
 
 /// Matches shared/content.json. Android reads the same file.

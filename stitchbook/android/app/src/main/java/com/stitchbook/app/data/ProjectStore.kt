@@ -53,6 +53,7 @@ class ProjectStore(context: Context) {
                             .put("name", counter.name)
                             .put("count", counter.count)
                             .put("target", counter.target ?: JSONObject.NULL)
+                            .put("previousCount", counter.previousCount ?: JSONObject.NULL)
                     )
                 }
             })
@@ -91,6 +92,7 @@ class ProjectStore(context: Context) {
                         count = c.getInt("count"),
                         target = if (c.isNull("target")) null else c.getInt("target"),
                         id = c.optString("id").ifBlank { java.util.UUID.randomUUID().toString() },
+                        previousCount = if (c.isNull("previousCount")) null else c.getInt("previousCount"),
                     )
                 },
                 repeats = List(repeatArray.length()) { index ->

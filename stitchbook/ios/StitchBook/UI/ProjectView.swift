@@ -150,6 +150,9 @@ struct ProjectView: View {
                 Button { change(counter.id) { $0.decrement() } } label: { Image(systemName: "minus.circle.fill").font(.title2) }
                 Button { change(counter.id) { $0.increment() } } label: { Image(systemName: "plus.circle.fill").font(.title2) }
                 Button { change(counter.id) { $0.reset() } } label: { Image(systemName: "arrow.counterclockwise.circle").font(.title2) }
+                if counter.previousCount != nil {
+                    Button { change(counter.id) { $0.undo() } } label: { Text("Undo").font(.subheadline.weight(.semibold)) }
+                }
             }
             .buttonStyle(.plain)
             .foregroundStyle(Palette.coral)

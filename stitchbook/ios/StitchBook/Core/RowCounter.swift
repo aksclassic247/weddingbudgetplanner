@@ -14,9 +14,33 @@ struct RowCounter: Codable, Equatable, Identifiable {
         self.target = target
     }
 
-    mutating func increment() { count += 1 }
-    mutating func decrement() { count = max(0, count - 1) }
-    mutating func reset() { count = 0 }
+    /// The count before the last change, so `undo()` can reverse one step.
+    private(set) var previousCount: Int? = nil
+
+    mutating func increment() {
+        previousCount = count
+        count += 1
+    }
+
+    /// Never goes below zero. A tap at zero is not recorded.
+    mutating func decrement() {
+        guard count > 0 else { return }
+        previousCount = count
+        count -= 1
+    }
+
+    mutating func reset() {
+        guard count > 0 else { return }
+        previousCount = count
+        count = 0
+    }
+
+    /// Reverses the last increment, decrement or reset. Only one step is remembered.
+    mutating func undo() {
+        guard let previous = previousCount else { return }
+        count = previous
+        previousCount = nil
+    }
 
     /// A value from 0 to 1, or nil when there is no target.
     var progress: Double? {

@@ -63,9 +63,13 @@ struct PatternDetailView: View {
                         .font(.footnote.weight(.semibold))
                         .foregroundStyle(Palette.coralDark)
                 }
-                if let credit = pattern.credit, !credit.isEmpty {
-                    Text(credit).font(.footnote).foregroundStyle(Palette.inkSoft)
+                VStack(alignment: .leading, spacing: 4) {
+                    Text(pattern.testLabel).font(.subheadline.weight(.bold)).foregroundStyle(Palette.ink)
+                    if let credit = pattern.credit, !credit.isEmpty {
+                        Text(credit).font(.footnote).foregroundStyle(Palette.inkSoft)
+                    }
                 }
+                .card(fill: pattern.testedOn == nil ? Palette.peach : .white)
                 Text("Check these instructions against your own yarn and tools before you begin.")
                     .font(.footnote)
                     .foregroundStyle(Palette.inkSoft)

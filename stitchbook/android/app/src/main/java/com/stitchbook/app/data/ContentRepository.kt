@@ -48,6 +48,8 @@ object ContentRepository {
         materials = getJSONArray("materials").strings(),
         gauge = optString("gauge", "").ifBlank { null },
         credit = optString("credit", ""),
+        testedOn = optString("testedOn", "").ifBlank { null },
+        testedBy = optString("testedBy", "").ifBlank { null },
         steps = getJSONArray("steps").map {
             PatternStep(
                 label = it.getString("label"),

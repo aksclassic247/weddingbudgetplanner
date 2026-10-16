@@ -31,7 +31,13 @@ data class Pattern(
     val gauge: String?,
     val credit: String,
     val steps: List<PatternStep>,
-)
+    val testedOn: String? = null,
+    val testedBy: String? = null,
+) {
+    /** What the pattern screen shows about testing. Stays "Untested draft" until a tester fills in both fields. */
+    val testLabel: String
+        get() = if (testedOn.isNullOrBlank()) "Untested draft" else "Tested on $testedOn by ${testedBy ?: "a tester"}"
+}
 
 data class Content(
     val tutorials: List<Tutorial>,

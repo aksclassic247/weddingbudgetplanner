@@ -39,6 +39,7 @@ import com.stitchbook.app.ui.components.hexColor
 import com.stitchbook.app.ui.theme.Coral
 import com.stitchbook.app.ui.theme.Ink
 import com.stitchbook.app.ui.theme.InkSoft
+import com.stitchbook.app.ui.theme.Peach
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -111,8 +112,13 @@ fun PatternDetailScreen(
             TextButton(onClick = {
                 com.stitchbook.app.support.Support.openMail(context, "Pattern problem: ${pattern.title}")
             }) { Text("Report a problem with this pattern", color = CoralDark) }
-            if (pattern.credit.isNotBlank()) {
-                Text(pattern.credit, style = MaterialTheme.typography.bodySmall, color = InkSoft)
+            Card(colors = CardDefaults.cardColors(containerColor = if (pattern.testedOn.isNullOrBlank()) Peach else Color.White)) {
+                Column(Modifier.padding(14.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                    Text(pattern.testLabel, fontWeight = FontWeight.Bold, color = Ink)
+                    if (pattern.credit.isNotBlank()) {
+                        Text(pattern.credit, style = MaterialTheme.typography.bodySmall, color = InkSoft)
+                    }
+                }
             }
             Text(
                 "Check these instructions against your own yarn and tools before you begin.",

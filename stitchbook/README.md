@@ -13,10 +13,13 @@ See [docs/review-analysis.md](docs/review-analysis.md) for the user reviews this
 - **Backup**: export all projects to a file and restore them on another phone or tablet. Photos and PDFs are not in the backup file.
 - **Tools**: a shaping calculator that works out where to place increases or decreases evenly across a row, and a yarn estimate that tells you how many balls to buy from the label.
 - **Search**: find patterns by name or craft, and filter by skill level.
-- **Credits**: every sample pattern says it was drafted with AI help and has not been test-made yet.
+- **Credits and testing**: every pattern shows "Untested draft" until a tester records a date and name. See `docs/pattern-testing.md`.
+- **Undo**: each row counter has an Undo button for the last tap.
 - **About and contact**: Home says what the app does not do (no photo-to-pattern, no AI chat). Each pattern has a "Report a problem" email link, and Home has a contact link.
 
-See `docs/store-listing.md` for store text that matches what the app does.
+See `docs/store-listing.md` for store text, `docs/privacy-policy.md` for the privacy policy, and `docs/store-checklist.md` for what is left before you submit.
+
+Every push runs the workflow in `.github/workflows/build.yml`. It runs the logic tests and builds the Android debug app, and builds the iOS app for the simulator. Check the Actions tab on GitHub after each push.
 
 ## Layout
 
@@ -74,7 +77,8 @@ Then pick a simulator and press **Run**. To run on your own iPhone, set your Tea
 
 ## Verification status
 
-- `android/core` (shaping, counters, stitch check, progress, yarn estimate, repeat counters, reminder timing): 23 unit tests pass.
+- `android/core` (shaping, counters with undo, stitch check, progress, yarn estimate, repeat counters, reminder timing): 27 unit tests pass.
+- GitHub Actions builds both apps on every push. Check that run before relying on the apps.
 - The Android app and iOS app were written but could not be compiled in the environment used to build them. Neither the Android SDK nor Xcode was available there. Build them in Android Studio and Xcode before you rely on them.
 
 ## Permissions

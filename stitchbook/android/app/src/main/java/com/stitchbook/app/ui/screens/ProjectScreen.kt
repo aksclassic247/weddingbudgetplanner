@@ -233,6 +233,9 @@ private fun CounterCard(counter: RowCounter, onChange: (RowCounter) -> Unit, onR
                 IconButton(onClick = { onChange(counter.decrement()) }) { Icon(Icons.Filled.Remove, contentDescription = "Minus one") }
                 IconButton(onClick = { onChange(counter.increment()) }) { Icon(Icons.Filled.Add, contentDescription = "Plus one") }
                 IconButton(onClick = { onChange(counter.reset()) }) { Icon(Icons.Filled.Refresh, contentDescription = "Reset") }
+                if (counter.previousCount != null) {
+                    TextButton(onClick = { onChange(counter.undo()) }) { Text("Undo", color = CoralDark) }
+                }
             }
             counter.progress?.let { fraction ->
                 LinearProgressIndicator(progress = { fraction }, modifier = Modifier.fillMaxWidth().height(6.dp), color = Coral, trackColor = Peach)
