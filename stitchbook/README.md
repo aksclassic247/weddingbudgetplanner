@@ -13,7 +13,10 @@ See [docs/review-analysis.md](docs/review-analysis.md) for the user reviews this
 - **Backup**: export all projects to a file and restore them on another phone or tablet. Photos and PDFs are not in the backup file.
 - **Tools**: a shaping calculator that works out where to place increases or decreases evenly across a row, and a yarn estimate that tells you how many balls to buy from the label.
 - **Search**: find patterns by name or craft, and filter by skill level.
-- **Credits**: every sample pattern says who wrote it and that it has not been test-made yet.
+- **Credits**: every sample pattern says it was drafted with AI help and has not been test-made yet.
+- **About and contact**: Home says what the app does not do (no photo-to-pattern, no AI chat). Each pattern has a "Report a problem" email link, and Home has a contact link.
+
+See `docs/store-listing.md` for store text that matches what the app does.
 
 ## Layout
 
@@ -66,7 +69,8 @@ Then pick a simulator and press **Run**. To run on your own iPhone, set your Tea
 - **Icons.** Both apps have a placeholder yarn-ball icon. Replace them with your own artwork before you submit.
 - **Bundle IDs.** Both platforms use `com.stitchbook.app`. Change these to an ID you own before publishing.
 - **Versions.** Android is 1.0.0 (code 1). iOS is 1.0.0 (build 1).
-- **Sample patterns.** The patterns in `shared/content.json` are samples. Check them against your own yarn and tools before you publish them as real instructions.
+- **Sample patterns.** The patterns in `shared/content.json` are drafts with AI help and have not been test-made. Test them, or keep the warning on every pattern.
+- **Support email.** Set your real address in `android/app/src/main/java/com/stitchbook/app/support/Support.kt` and `ios/StitchBook/Support/Support.swift`.
 
 ## Verification status
 

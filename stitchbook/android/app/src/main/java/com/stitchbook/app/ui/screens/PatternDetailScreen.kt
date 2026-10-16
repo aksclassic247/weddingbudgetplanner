@@ -23,6 +23,7 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -47,6 +48,7 @@ fun PatternDetailScreen(
     onBack: () -> Unit,
     onStarted: (String) -> Unit,
 ) {
+    val context = androidx.compose.ui.platform.LocalContext.current
     Scaffold(
         topBar = {
             TopAppBar(
@@ -106,6 +108,9 @@ fun PatternDetailScreen(
                 modifier = Modifier.fillMaxWidth(),
             ) { Text("Start this project") }
 
+            TextButton(onClick = {
+                com.stitchbook.app.support.Support.openMail(context, "Pattern problem: ${pattern.title}")
+            }) { Text("Report a problem with this pattern", color = CoralDark) }
             if (pattern.credit.isNotBlank()) {
                 Text(pattern.credit, style = MaterialTheme.typography.bodySmall, color = InkSoft)
             }

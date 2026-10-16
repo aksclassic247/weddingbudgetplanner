@@ -58,6 +58,11 @@ struct PatternDetailView: View {
                         .foregroundStyle(.white)
                 }
 
+                if let url = Support.mailURL(subject: "Pattern problem: \(pattern.title)") {
+                    Link("Report a problem with this pattern", destination: url)
+                        .font(.footnote.weight(.semibold))
+                        .foregroundStyle(Palette.coralDark)
+                }
                 if let credit = pattern.credit, !credit.isEmpty {
                     Text(credit).font(.footnote).foregroundStyle(Palette.inkSoft)
                 }

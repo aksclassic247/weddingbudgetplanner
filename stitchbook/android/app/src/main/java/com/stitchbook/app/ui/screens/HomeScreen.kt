@@ -23,6 +23,7 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -52,6 +53,7 @@ fun HomeScreen(
     onProject: (String) -> Unit,
     onTab: (String) -> Unit,
 ) {
+    val context = androidx.compose.ui.platform.LocalContext.current
     val projects by vm.projects.collectAsState()
     val latest = projects.firstOrNull()
     val latestPattern = latest?.let { vm.content.pattern(it.patternId) }
@@ -130,6 +132,17 @@ fun HomeScreen(
                         Text("${tutorial.minutes} min · ${CraftName(tutorial.craft)}", style = MaterialTheme.typography.bodySmall, color = InkSoft)
                     }
                     Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, contentDescription = null, tint = InkSoft)
+                }
+            }
+        }
+        item {
+            Card(colors = CardDefaults.cardColors(containerColor = Color.White)) {
+                Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                    Text("About StitchBook", fontWeight = FontWeight.Bold, color = Ink)
+                    Text(com.stitchbook.app.support.Support.ABOUT_TEXT, style = MaterialTheme.typography.bodySmall, color = InkSoft)
+                    OutlinedButton(onClick = { com.stitchbook.app.support.Support.openMail(context, "StitchBook feedback") }) {
+                        Text("Contact us or report a problem")
+                    }
                 }
             }
         }

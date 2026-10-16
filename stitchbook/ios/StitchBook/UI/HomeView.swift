@@ -47,6 +47,17 @@ struct HomeView: View {
                     }
                     .buttonStyle(.plain)
                 }
+
+                VStack(alignment: .leading, spacing: 10) {
+                    Text("About StitchBook").font(.headline).foregroundStyle(Palette.ink)
+                    Text(Support.aboutText).font(.footnote).foregroundStyle(Palette.inkSoft)
+                    if let url = Support.mailURL(subject: "StitchBook feedback") {
+                        Link("Contact us or report a problem", destination: url)
+                            .font(.subheadline.weight(.semibold))
+                            .foregroundStyle(Palette.coralDark)
+                    }
+                }
+                .card()
             }
             .padding(16)
         }
