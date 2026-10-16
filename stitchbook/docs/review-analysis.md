@@ -43,6 +43,14 @@ Taken from competitor listings (see the sources above):
 - Floating counter over a PDF: **not done**. Needs a PDF viewer.
 - Sounds and haptics: **haptics done on Android. iOS uses the same counter but has no haptic yet.**
 
+## What changed in the latest round
+
+- Yarn estimate from the label's grams and metres, with a 10 percent margin (both platforms).
+- Search and skill-level filters on the Patterns screen (both platforms).
+- Every sample pattern has a credit line saying it has not been test-made (both platforms).
+- iOS haptic feedback on every counter tap, matching Android.
+- App icon placeholder for iOS.
+
 ## Features we did not build yet
 
 - Row reminders with notifications.

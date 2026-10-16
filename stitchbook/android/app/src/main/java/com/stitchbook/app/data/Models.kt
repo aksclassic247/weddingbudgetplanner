@@ -29,6 +29,7 @@ data class Pattern(
     val time: String,
     val materials: List<String>,
     val gauge: String?,
+    val credit: String,
     val steps: List<PatternStep>,
 )
 

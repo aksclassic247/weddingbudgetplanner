@@ -58,7 +58,10 @@ struct PatternDetailView: View {
                         .foregroundStyle(.white)
                 }
 
-                Text("These are sample instructions. Check them against your own yarn and tools before you begin.")
+                if let credit = pattern.credit, !credit.isEmpty {
+                    Text(credit).font(.footnote).foregroundStyle(Palette.inkSoft)
+                }
+                Text("Check these instructions against your own yarn and tools before you begin.")
                     .font(.footnote)
                     .foregroundStyle(Palette.inkSoft)
             }

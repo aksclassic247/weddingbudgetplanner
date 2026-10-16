@@ -5,6 +5,7 @@ struct ProjectView: View {
     let projectId: String
 
     @State private var checkingExpected: Int?
+    @State private var hapticTick = 0
     @State private var showAddCounter = false
     @State private var confirmRemove = false
     @Environment(\.dismiss) private var dismiss
@@ -99,6 +100,7 @@ struct ProjectView: View {
             .padding(16)
         }
         .background(Palette.cream)
+        .sensoryFeedback(.selection, trigger: hapticTick)
     }
 
     private func stepRow(index: Int, step: PatternStep, checked: Bool) -> some View {
@@ -169,6 +171,7 @@ struct ProjectView: View {
             guard let index = project.counters.firstIndex(where: { $0.id == counterId }) else { return }
             transform(&project.counters[index])
         }
+        hapticTick += 1
     }
 }
 

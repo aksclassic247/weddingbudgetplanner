@@ -3,11 +3,19 @@ import SwiftUI
 struct PatternsView: View {
     @EnvironmentObject private var library: LibraryStore
     @State private var level = "All"
+    @State private var query = ""
 
     private let levels = ["All", "Easy", "Beginner", "Intermediate", "Advanced"]
 
     private var visible: [Pattern] {
-        library.content.patterns.filter { level == "All" || $0.level == level }
+        library.content.patterns.filter { pattern in
+            let text = query.trimmingCharacters(in: .whitespaces)
+            let matchesLevel = level == "All" || pattern.level == level
+            let matchesText = text.isEmpty
+                || pattern.title.localizedCaseInsensitiveContains(text)
+                || craftName(pattern.craft).localizedCaseInsensitiveContains(text)
+            return matchesLevel && matchesText
+        }
     }
 
     var body: some View {
@@ -60,6 +68,7 @@ struct PatternsView: View {
             .padding(16)
         }
         .background(Palette.cream)
+        .searchable(text: $query, prompt: "Search patterns")
         .navigationTitle("Get inspired")
     }
 }

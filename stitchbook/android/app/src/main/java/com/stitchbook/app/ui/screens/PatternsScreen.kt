@@ -19,6 +19,7 @@ import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.FilterChip
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -43,11 +44,24 @@ private val levels = listOf("All", "Easy", "Beginner", "Intermediate", "Advanced
 @Composable
 fun PatternsScreen(vm: ProjectsViewModel, onPattern: (String) -> Unit) {
     var level by remember { mutableStateOf("All") }
-    val visible = vm.content.patterns.filter { level == "All" || it.level == level }
+    var query by remember { mutableStateOf("") }
+    val visible = vm.content.patterns.filter { pattern ->
+        (level == "All" || pattern.level == level) &&
+            (query.isBlank() ||
+                pattern.title.contains(query.trim(), ignoreCase = true) ||
+                CraftName(pattern.craft).contains(query.trim(), ignoreCase = true))
+    }
 
     Column(Modifier.fillMaxSize().padding(horizontal = 16.dp).padding(top = 16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
         Text("Get inspired", style = MaterialTheme.typography.headlineMedium, fontWeight = FontWeight.ExtraBold, color = Ink)
         Text("Patterns for every skill level. Start one and track each round.", style = MaterialTheme.typography.bodyMedium, color = InkSoft)
+        OutlinedTextField(
+            value = query,
+            onValueChange = { query = it },
+            modifier = Modifier.fillMaxWidth(),
+            singleLine = true,
+            label = { Text("Search patterns") },
+        )
         LazyRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
             rowItems(levels) { label ->
                 FilterChip(selected = level == label, onClick = { level = label }, label = { Text(label) })

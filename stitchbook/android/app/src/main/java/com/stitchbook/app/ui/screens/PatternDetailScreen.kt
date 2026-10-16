@@ -106,8 +106,11 @@ fun PatternDetailScreen(
                 modifier = Modifier.fillMaxWidth(),
             ) { Text("Start this project") }
 
+            if (pattern.credit.isNotBlank()) {
+                Text(pattern.credit, style = MaterialTheme.typography.bodySmall, color = InkSoft)
+            }
             Text(
-                "These are sample instructions. Check them against your own yarn and tools before you begin.",
+                "Check these instructions against your own yarn and tools before you begin.",
                 style = MaterialTheme.typography.bodySmall,
                 color = InkSoft,
             )

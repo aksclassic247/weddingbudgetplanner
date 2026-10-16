@@ -10,7 +10,9 @@ See [docs/review-analysis.md](docs/review-analysis.md) for the user reviews this
 - **Learn**: step-by-step tutorials for knitting and crochet, and an abbreviations guide.
 - **Patterns**: pattern cards filtered by skill level. Start a pattern to make a project.
 - **Projects**: a checklist for each round, a "Check my count" tool, row counters with optional targets, and notes. Saved on the device.
-- **Tools**: a shaping calculator that works out where to place increases or decreases evenly across a row.
+- **Tools**: a shaping calculator that works out where to place increases or decreases evenly across a row, and a yarn estimate that tells you how many balls to buy from the label.
+- **Search**: find patterns by name or craft, and filter by skill level.
+- **Credits**: every sample pattern says who wrote it and that it has not been test-made yet.
 
 ## Layout
 
@@ -60,12 +62,20 @@ Then pick a simulator and press **Run**. To run on your own iPhone, set your Tea
 
 ## Before you publish
 
-- **Icons.** The Android app has a simple launcher icon. The iOS app has no icon yet. Add a 1024 by 1024 icon to an `AppIcon` asset in Xcode before you submit.
+- **Icons.** Both apps have a placeholder yarn-ball icon. Replace them with your own artwork before you submit.
 - **Bundle IDs.** Both platforms use `com.stitchbook.app`. Change these to an ID you own before publishing.
 - **Versions.** Android is 1.0.0 (code 1). iOS is 1.0.0 (build 1).
 - **Sample patterns.** The patterns in `shared/content.json` are samples. Check them against your own yarn and tools before you publish them as real instructions.
 
 ## Verification status
 
-- `android/core` (shaping, counters, stitch check, progress): 13 unit tests pass.
+- `android/core` (shaping, counters, stitch check, progress, yarn estimate): 16 unit tests pass.
 - The Android app and iOS app were written but could not be compiled in the environment used to build them. Neither the Android SDK nor Xcode was available there. Build them in Android Studio and Xcode before you rely on them.
+
+## Not built yet
+
+- **Row reminders.** Needs notification permission on both platforms.
+- **Importing your own PDF patterns.** Needs a PDF reader on both platforms.
+- **Photos on projects.** Needs camera and photo library access.
+- **Syncing between devices.** Needs accounts and a server.
+- **Linked counters.** Counters work one at a time for now.

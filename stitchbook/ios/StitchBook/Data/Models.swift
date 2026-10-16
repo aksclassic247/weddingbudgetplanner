@@ -41,6 +41,7 @@ struct Pattern: Codable, Identifiable, Hashable {
     let time: String
     let materials: [String]
     let gauge: String?
+    let credit: String?
     let steps: [PatternStep]
 }
 
