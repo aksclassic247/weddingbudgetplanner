@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "StitchBook",
+    "slug": "stitchbook",
+    "scheme": "stitchbook",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.stitchbook.app"
+    },
+    "android": {
+      "package": "com.stitchbook.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#FBE8DA",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": ["expo-router"]
+  }
+}
