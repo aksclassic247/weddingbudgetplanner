@@ -35,5 +35,5 @@ What StitchBook does not do:
 
 ## Before you submit
 
-- Replace the placeholder icon and the support email in `shared/content.json`'s app code (`Support.kt` and `Support.swift`).
+- Replace the placeholder icons, and set your real support email in `android/app/src/main/java/com/stitchbook/app/support/Support.kt` and `ios/StitchBook/Support/Support.swift`.
 - Test every sample pattern, or label each one clearly as untested.
