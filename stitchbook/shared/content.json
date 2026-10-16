@@ -470,6 +470,401 @@
       "credit": "Drafted with AI help by the StitchBook team. Not yet test-made by a person. Check every stitch count before you start, and tell us if something is wrong.",
       "testedOn": null,
       "testedBy": null
+    },
+    {
+      "id": "sewing-poinsettia",
+      "craft": "sewing",
+      "title": "Quilted Poinsettia Wall Hanging",
+      "level": "Beginner",
+      "color": "#8E2B35",
+      "emoji": "🌺",
+      "time": "About 6–8 hours",
+      "materials": [
+        "Burgundy 1/2 yd, cream 1/2 yd, green 1/2 yd, red 1/2 yd",
+        "Background 1 yd, backing 1 yd, batting 32 in square",
+        "About 18 red beads, 8–10 mm",
+        "Rotary cutter, self-healing mat and clear acrylic ruler",
+        "Iron and board (dry, cotton setting)",
+        "Sewing machine with a walking foot and a 90/14 jeans needle",
+        "Water-soluble marker and pin-and-string circle compass",
+        "Batting, thread, and 2.25-in bias binding",
+        "3/4-in dowel or rod for hanging"
+      ],
+      "gauge": null,
+      "credit": "Designed by HugStitchLoom. Measurements were calculated and geometrically checked, but these designs have not yet been physically sewn. Check every measurement on your first make.",
+      "steps": [
+        {
+          "label": "Cut",
+          "text": "Cut 64 petal squares: 16 burgundy 6-in, 16 cream 5-in, 12 green 5-in, 12 red 4-in, 8 red 3-in. Cut background, batting and backing 32-in squares. Stack each size separately.",
+          "stitches": null
+        },
+        {
+          "label": "Fold",
+          "text": "Fold each square into a prairie-point petal: fold diagonally, then fold the two acute corners up to meet the right-angle corner. Make a test petal first; the point should be crisp.",
+          "stitches": null
+        },
+        {
+          "label": "Press",
+          "text": "Press every petal with a hot dry iron, no steam. Restack by ring: 16, 16, 12, 12 and 8.",
+          "stitches": null
+        },
+        {
+          "label": "Sandwich",
+          "text": "Lay the backing right side down, batting centered, background right side up. Smooth from the center outward and pin or spray-baste every 6 in.",
+          "stitches": null
+        },
+        {
+          "label": "Guide circles",
+          "text": "Find the center by folding the sandwich in quarters. Draw light guide circles of 19, 15, 11.5, 8 and 4.5 in.",
+          "stitches": null
+        },
+        {
+          "label": "Ring 1",
+          "text": "Arrange 16 burgundy petals on the 19-in circle, tips out, bases on the line, about 3.7 in apart. Pin through all layers. If the last petal will not fit, re-space the whole ring.",
+          "stitches": null
+        },
+        {
+          "label": "Stitch and vein",
+          "text": "Stitch each petal base 1/4 in from the edge, with backstitching at both ends. Add a center vein on each petal with 3.0 mm straight stitch in gold thread.",
+          "stitches": null
+        },
+        {
+          "label": "Rings 2 to 5",
+          "text": "Ring 2: 16 cream 5-in petals on the 15-in circle. Ring 3: 12 green 5-in petals on the 11.5-in circle, offset between the cream petals. Ring 4: 12 red 4-in petals on the 8-in circle. Ring 5: 8 red 3-in petals on the 4.5-in circle. Check each gap so no petal sits on top of its neighbour.",
+          "stitches": null
+        },
+        {
+          "label": "Quilt",
+          "text": "Quilt the exposed background with curved echo lines 1/2 in apart, or a simple stipple. Keep clear of the petal tips.",
+          "stitches": null
+        },
+        {
+          "label": "Beads",
+          "text": "Sew about 18 red beads in a tight cluster in the center, with doubled thread through all layers. Knot every third bead and tug-test every bead.",
+          "stitches": null
+        },
+        {
+          "label": "Trim and bind",
+          "text": "Trim to a 30-in circle, turning the mat rather than the quilt. Bind with about 105 in of 2.25-in bias: machine-stitch to the front, fold to the back and hand-stitch.",
+          "stitches": null
+        },
+        {
+          "label": "Sleeve and hang",
+          "text": "Make a 28 × 4 in sleeve, center it on the back 2 in below the top edge and stitch the long edges. Slide a rod through and hang.",
+          "stitches": null
+        }
+      ],
+      "testedOn": null,
+      "testedBy": null
+    },
+    {
+      "id": "sewing-christmas-tree",
+      "craft": "sewing",
+      "title": "Quilted Christmas Tree Wall Hanging",
+      "level": "Beginner",
+      "color": "#2F6B47",
+      "emoji": "🎄",
+      "time": "About 6–8 hours",
+      "materials": [
+        "Green 1 yd, gold 1/4 yd, brown 1/4 yd for the trunk",
+        "Background 1-1/4 yd, backing 1-1/4 yd, batting 30 × 34 in",
+        "About 14 red and gold beads, 8 mm",
+        "Rotary cutter, self-healing mat and clear acrylic ruler",
+        "Iron and board (dry, cotton setting)",
+        "Sewing machine with a walking foot and a 90/14 jeans needle",
+        "Water-soluble marker and pin-and-string circle compass",
+        "Batting, thread, and 2.25-in bias binding",
+        "3/4-in dowel or rod for hanging"
+      ],
+      "gauge": null,
+      "credit": "Designed by HugStitchLoom. Measurements were calculated and geometrically checked, but these designs have not yet been physically sewn. Check every measurement on your first make.",
+      "steps": [
+        {
+          "label": "Cut",
+          "text": "Cut 26 green petals: 8 at 7 in, 7 at 6 in, 6 at 5 in, 5 at 4.5 in. Cut 8 gold 2.5-in squares and one 5 × 7-in brown trunk. Cut background, batting and backing 30 × 34 in.",
+          "stitches": null
+        },
+        {
+          "label": "Sandwich",
+          "text": "Lay the backing right side down, batting in the middle, background right side up. Smooth from the center out and pin-baste every 4 in.",
+          "stitches": null
+        },
+        {
+          "label": "Quilt first",
+          "text": "With a walking foot, quilt a diagonal 2-in crosshatch over the whole background before any petals go on.",
+          "stitches": null
+        },
+        {
+          "label": "Fold and press",
+          "text": "Fold all 26 green petals and the 8 gold mini petals. Make a test petal first; press with no steam and restack by size.",
+          "stitches": null
+        },
+        {
+          "label": "Trunk",
+          "text": "Center the brown trunk with its base 2 in from the bottom edge and stitch 1/4 in from the edge. Its top will sit under row 1.",
+          "stitches": null
+        },
+        {
+          "label": "Tiers",
+          "text": "Row 1: 8 petals on the 9-in base line, 3.25 in apart. Row 2: 7 petals on the 14-in line, 3 in apart. Row 3: 6 petals on the 18.5-in line, 2.75 in apart. Row 4: 5 petals on the 22.5-in line, 2.5 in apart. Petal tips point down. Measure from both side edges.",
+          "stitches": null
+        },
+        {
+          "label": "Stitch and vein",
+          "text": "Stitch every petal base and add a center vein with 3.0 mm straight stitch.",
+          "stitches": null
+        },
+        {
+          "label": "Star topper",
+          "text": "Arrange the 8 gold mini petals in a starburst about 5 in across, centered 28 in from the bottom. Stitch the bases and sew one gold bead in the center.",
+          "stitches": null
+        },
+        {
+          "label": "Ornaments",
+          "text": "Hand-sew about 14 red and gold beads across the tiers, in the middle third of each petal. Knot every third bead and tug-test every bead.",
+          "stitches": null
+        },
+        {
+          "label": "Bind and hang",
+          "text": "Join 2.25-in strips into a strip of about 140 in. Machine-stitch to the front, fold to the back and hand-stitch. Add a hanging sleeve 2 in below the top edge and slide a rod through.",
+          "stitches": null
+        }
+      ],
+      "testedOn": null,
+      "testedBy": null
+    },
+    {
+      "id": "sewing-holiday-wreath",
+      "craft": "sewing",
+      "title": "Quilted Holiday Wreath Wall Hanging",
+      "level": "Beginner",
+      "color": "#6B8F4E",
+      "emoji": "🎀",
+      "time": "About 5–6 hours",
+      "materials": [
+        "Green 3/4 yd, red 1/4 yd for the bow",
+        "Background 3/4 yd, backing 3/4 yd, batting 24-in squares",
+        "About 22 red beads, 8–10 mm",
+        "Rotary cutter, self-healing mat and clear acrylic ruler",
+        "Iron and board (dry, cotton setting)",
+        "Sewing machine with a walking foot and a 90/14 jeans needle",
+        "Water-soluble marker and pin-and-string circle compass",
+        "Batting, thread, and 2.25-in bias binding",
+        "3/4-in dowel or rod for hanging"
+      ],
+      "gauge": null,
+      "credit": "Designed by HugStitchLoom. Measurements were calculated and geometrically checked, but these designs have not yet been physically sewn. Check every measurement on your first make.",
+      "steps": [
+        {
+          "label": "Cut",
+          "text": "Cut 26 green 5-in squares. Cut the bow: 2 red loops at 10 × 7 in, 2 red tails at 4 × 10 in, and one 3 × 3-in red center. Cut background, batting and backing 24-in squares.",
+          "stitches": null
+        },
+        {
+          "label": "Fold and press",
+          "text": "Fold all 26 green petals. Make a test petal first. Press with no steam and stack them in one pile.",
+          "stitches": null
+        },
+        {
+          "label": "Sandwich and quilt",
+          "text": "Lay the backing right side down, batting, then background right side up. Quilt radiating straight lines from the center to the edge. Trim only after quilting, because quilting shrinks the sandwich by about 1/2 in.",
+          "stitches": null
+        },
+        {
+          "label": "Guide circle",
+          "text": "Trim the quilted sandwich to a 22-in circle. Mark a 20-in leaf guide with the compass.",
+          "stitches": null
+        },
+        {
+          "label": "Marker petals",
+          "text": "Place 4 petals first, tips out, at 12, 3, 6 and 9 o'clock on the guide. Spacing drift ruins a wreath, so these markers keep each quarter even.",
+          "stitches": null
+        },
+        {
+          "label": "Fill the wreath",
+          "text": "Fill each quarter with 5 to 6 petals, 26 in total, tips out, about 2.4 in apart with about 1/2 in overlap. Pin each petal through all layers.",
+          "stitches": null
+        },
+        {
+          "label": "Stitch and vein",
+          "text": "Stitch every petal base 1/4 in from the edge, working around the circle in order. Add a 3.0 mm green vein to each leaf.",
+          "stitches": null
+        },
+        {
+          "label": "Berries",
+          "text": "Hand-sew about 22 red beads in clusters of three, in 7 or 8 clusters tucked where the leaves meet. Use doubled thread through all layers.",
+          "stitches": null
+        },
+        {
+          "label": "Bow",
+          "text": "Fold each 10 × 7-in loop into a loop with raw edges to the center back and stitch. Layer the loops, add the tails behind, wrap the 3-in center square around the middle and stitch the bow to the top of the wreath through all layers.",
+          "stitches": null
+        },
+        {
+          "label": "Bind",
+          "text": "Trim the check to 22 in and bind with about 75 in of 2.25-in bias, easing around the curve. Hand-stitch to the back.",
+          "stitches": null
+        },
+        {
+          "label": "Sleeve and hang",
+          "text": "Add a hanging sleeve 2 in below the top edge and slide a rod through.",
+          "stitches": null
+        }
+      ],
+      "testedOn": null,
+      "testedBy": null
+    },
+    {
+      "id": "sewing-snowflake",
+      "craft": "sewing",
+      "title": "Quilted Snowflake Wall Hanging",
+      "level": "Beginner",
+      "color": "#B9D7EA",
+      "emoji": "❄️",
+      "time": "About 4–5 hours",
+      "materials": [
+        "Ice-blue 1/2 yd, white 1/2 yd",
+        "Background 3/4 yd, backing 3/4 yd, batting 20-in squares",
+        "About 12 crystal beads, 8 mm",
+        "Rotary cutter, self-healing mat and clear acrylic ruler",
+        "Iron and board (dry, cotton setting)",
+        "Sewing machine with a walking foot and a 90/14 jeans needle",
+        "Water-soluble marker and pin-and-string circle compass",
+        "Batting, thread, and 2.25-in bias binding",
+        "3/4-in dowel or rod for hanging"
+      ],
+      "gauge": null,
+      "credit": "Designed by HugStitchLoom. Measurements were calculated and geometrically checked, but these designs have not yet been physically sewn. Check every measurement on your first make.",
+      "steps": [
+        {
+          "label": "Cut",
+          "text": "Cut 6 ice-blue 7-in squares and 12 white 4-in squares. Cut background, batting and backing 20-in squares.",
+          "stitches": null
+        },
+        {
+          "label": "Fold and press",
+          "text": "Fold all 18 petals. Make a test petal first. Press with no steam and keep the blues and whites in separate piles.",
+          "stitches": null
+        },
+        {
+          "label": "Sandwich and quilt",
+          "text": "Lay the backing right side down, batting, then background right side up. Quilt echo circles 1 in apart.",
+          "stitches": null
+        },
+        {
+          "label": "Guides",
+          "text": "Trim to an 18-in circle. Mark a 16-in guide for the arms and a 12-in guide for the branches with the compass.",
+          "stitches": null
+        },
+        {
+          "label": "Arms",
+          "text": "Place all 6 blue petals on the 16-in guide at 12, 2, 4, 6, 8 and 10 o'clock, tips out. Place all six before stitching any, because six-fold symmetry shows every error.",
+          "stitches": null
+        },
+        {
+          "label": "Stitch and vein arms",
+          "text": "Pin each arm, stitch its base 1/4 in from the edge and add a 3.0 mm vein in silver or pale-blue thread.",
+          "stitches": null
+        },
+        {
+          "label": "Branches",
+          "text": "Arrange the 12 white petals on the 12-in guide at the 30° marks, offset 15° from the blue arms, so each arm sits between two white petals. Stitch and vein each one.",
+          "stitches": null
+        },
+        {
+          "label": "Crystal center",
+          "text": "Hand-sew about 12 crystal beads in a tight cluster in the center, with doubled thread through all layers twice per bead. Tug-test every bead.",
+          "stitches": null
+        },
+        {
+          "label": "Trim and bind",
+          "text": "Trim the check to an 18-in circle and bind with about 62 in of 2.25-in bias, easing around the curve.",
+          "stitches": null
+        },
+        {
+          "label": "Sleeve and hang",
+          "text": "Add a hanging sleeve 2 in below the top edge and slide a rod through.",
+          "stitches": null
+        }
+      ],
+      "testedOn": null,
+      "testedBy": null
+    },
+    {
+      "id": "sewing-christmas-star",
+      "craft": "sewing",
+      "title": "Quilted Christmas Star Wall Hanging",
+      "level": "Beginner",
+      "color": "#7A1F2B",
+      "emoji": "⭐",
+      "time": "About 5–6 hours",
+      "materials": [
+        "Burgundy 1/2 yd, gold 1/2 yd",
+        "Background 3/4 yd, backing 3/4 yd, batting 22-in squares",
+        "About 14 gold beads, 8 mm",
+        "Rotary cutter, self-healing mat and clear acrylic ruler",
+        "Iron and board (dry, cotton setting)",
+        "Sewing machine with a walking foot and a 90/14 jeans needle",
+        "Water-soluble marker and pin-and-string circle compass",
+        "Batting, thread, and 2.25-in bias binding",
+        "3/4-in dowel or rod for hanging"
+      ],
+      "gauge": null,
+      "credit": "Designed by HugStitchLoom. Measurements were calculated and geometrically checked, but these designs have not yet been physically sewn. Check every measurement on your first make.",
+      "steps": [
+        {
+          "label": "Cut",
+          "text": "Cut 8 burgundy 6-in squares and 8 gold 4.5-in squares. Cut background, batting and backing 22-in squares.",
+          "stitches": null
+        },
+        {
+          "label": "Fold and press",
+          "text": "Fold all 16 petals: 8 large burgundy, 8 smaller gold. Make a test petal first. Press with no steam and keep the colors separate.",
+          "stitches": null
+        },
+        {
+          "label": "Sandwich and quilt",
+          "text": "Lay the backing right side down, batting, then background right side up. Quilt a simple diagonal grid across it.",
+          "stitches": null
+        },
+        {
+          "label": "Guides",
+          "text": "Trim to a 20-in circle. Mark an 18-in guide and an 11-in guide, plus 8 tick marks on the inner circle halfway between the outer marks. Mark the offset ticks now; eyeballing the 22.5° offset later makes the star crooked.",
+          "stitches": null
+        },
+        {
+          "label": "Back layer",
+          "text": "Arrange the 8 burgundy petals on the 18-in guide, tips out, about 7.1 in apart.",
+          "stitches": null
+        },
+        {
+          "label": "Stitch back layer",
+          "text": "Pin with 2 pins each, stitch the bases 1/4 in from the edge and add 3.0 mm gold veins.",
+          "stitches": null
+        },
+        {
+          "label": "Front layer",
+          "text": "Arrange the 8 gold petals on the 11-in guide, on the offset ticks, overlapping the burgundy bases. Stitch and vein each one.",
+          "stitches": null
+        },
+        {
+          "label": "Bead center",
+          "text": "Hand-sew about 14 gold beads in a tight cluster in the center, with doubled thread through all layers twice per bead. Tug-test every bead.",
+          "stitches": null
+        },
+        {
+          "label": "Trim and bind",
+          "text": "Trim the check to 20 in and bind with about 69 in of 2.25-in bias, easing around the curve.",
+          "stitches": null
+        },
+        {
+          "label": "Sleeve and hang",
+          "text": "Add a hanging sleeve 2 in below the top edge and slide a rod through.",
+          "stitches": null
+        }
+      ],
+      "testedOn": null,
+      "testedBy": null
     }
   ]
 }

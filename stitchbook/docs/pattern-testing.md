@@ -27,5 +27,14 @@ The app then shows "Tested on 2026-11-02 by Priya" on that pattern. Until both f
 | Garter Stitch Scarf | Untested draft |
 | Ribbed Knit Hat | Untested draft |
 | Simple Granny Square | Untested draft |
+| Quilted Poinsettia Wall Hanging | Untested draft |
+| Quilted Christmas Tree Wall Hanging | Untested draft |
+| Quilted Holiday Wreath Wall Hanging | Untested draft |
+| Quilted Snowflake Wall Hanging | Untested draft |
+| Quilted Christmas Star Wall Hanging | Untested draft |
+
+The five quilting designs come from the HugStitchLoom Quilted Christmas collection. The designer's own notes say they were calculated and checked on paper, but never physically sewn. A tester should sew each one before it is marked tested. The collection's checklist (fold hold, petal count, vein straightness, a 48-hour hang test, bead tug test and final measurements) is a good test script.
 
 New patterns, such as the octopus, bear and sweater ideas, should be added only after a tester has made them.
+
+Note: the Quilted Christmas collection's terms forbid redistribution. The designer owns the listing and can change those terms. Update the terms before the app is published with these patterns in it.

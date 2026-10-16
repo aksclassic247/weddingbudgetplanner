@@ -4,17 +4,20 @@ struct PatternsView: View {
     @EnvironmentObject private var library: LibraryStore
     @State private var level = "All"
     @State private var query = ""
+    @State private var craft = "all"
 
     private let levels = ["All", "Easy", "Beginner", "Intermediate", "Advanced"]
+    private let crafts: [(key: String, label: String)] = [("all", "All crafts"), ("knitting", "Knitting"), ("crochet", "Crochet"), ("sewing", "Sewing")]
 
     private var visible: [Pattern] {
         library.content.patterns.filter { pattern in
             let text = query.trimmingCharacters(in: .whitespaces)
+            let matchesCraft = craft == "all" || pattern.craft == craft
             let matchesLevel = level == "All" || pattern.level == level
             let matchesText = text.isEmpty
                 || pattern.title.localizedCaseInsensitiveContains(text)
                 || craftName(pattern.craft).localizedCaseInsensitiveContains(text)
-            return matchesLevel && matchesText
+            return matchesCraft && matchesLevel && matchesText
         }
     }
 
@@ -24,6 +27,20 @@ struct PatternsView: View {
                 Text("Patterns for every skill level. Start one and track each round.")
                     .font(.subheadline)
                     .foregroundStyle(Palette.inkSoft)
+
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 8) {
+                        ForEach(crafts, id: \.key) { option in
+                            Button(option.label) { craft = option.key }
+                                .font(.footnote.weight(.semibold))
+                                .padding(.horizontal, 14)
+                                .padding(.vertical, 8)
+                                .background(craft == option.key ? Palette.ink : .white, in: Capsule())
+                                .foregroundStyle(craft == option.key ? .white : Palette.inkSoft)
+                                .overlay(Capsule().stroke(Palette.line, lineWidth: craft == option.key ? 0 : 1))
+                        }
+                    }
+                }
 
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 8) {

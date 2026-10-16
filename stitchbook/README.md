@@ -13,6 +13,7 @@ See [docs/review-analysis.md](docs/review-analysis.md) for the user reviews this
 - **Backup**: export all projects to a file and restore them on another phone or tablet. Photos and PDFs are not in the backup file.
 - **Tools**: a shaping calculator that works out where to place increases or decreases evenly across a row, and a yarn estimate that tells you how many balls to buy from the label.
 - **Search**: find patterns by name or craft, and filter by skill level.
+- **Sewing**: five quilted Christmas wall hangings from the HugStitchLoom collection, shown as untested drafts. Their terms say they may not be redistributed, so update those terms before publishing the app.
 - **Credits and testing**: every pattern shows "Untested draft" until a tester records a date and name. See `docs/pattern-testing.md`.
 - **Undo**: each row counter has an Undo button for the last tap.
 - **About and contact**: Home says what the app does not do (no photo-to-pattern, no AI chat). Each pattern has a "Report a problem" email link, and Home has a contact link.

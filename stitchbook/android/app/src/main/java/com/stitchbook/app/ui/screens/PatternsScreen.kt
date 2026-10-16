@@ -40,12 +40,15 @@ import com.stitchbook.app.ui.theme.Ink
 import com.stitchbook.app.ui.theme.InkSoft
 
 private val levels = listOf("All", "Easy", "Beginner", "Intermediate", "Advanced")
+private val crafts = listOf("all" to "All crafts", "knitting" to "Knitting", "crochet" to "Crochet", "sewing" to "Sewing")
 
 @Composable
 fun PatternsScreen(vm: ProjectsViewModel, onPattern: (String) -> Unit) {
     var level by remember { mutableStateOf("All") }
     var query by remember { mutableStateOf("") }
+    var craft by remember { mutableStateOf("all") }
     val visible = vm.content.patterns.filter { pattern ->
+        (craft == "all" || pattern.craft == craft) &&
         (level == "All" || pattern.level == level) &&
             (query.isBlank() ||
                 pattern.title.contains(query.trim(), ignoreCase = true) ||
@@ -62,6 +65,11 @@ fun PatternsScreen(vm: ProjectsViewModel, onPattern: (String) -> Unit) {
             singleLine = true,
             label = { Text("Search patterns") },
         )
+        LazyRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            rowItems(crafts) { (key, label) ->
+                FilterChip(selected = craft == key, onClick = { craft = key }, label = { Text(label) })
+            }
+        }
         LazyRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
             rowItems(levels) { label ->
                 FilterChip(selected = level == label, onClick = { level = label }, label = { Text(label) })

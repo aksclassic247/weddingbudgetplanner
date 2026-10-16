@@ -57,5 +57,9 @@ struct ColorCover: View {
 }
 
 func craftName(_ craft: String) -> String {
-    craft == "knitting" ? "Knitting" : "Crochet"
+    switch craft {
+    case "knitting": return "Knitting"
+    case "sewing": return "Sewing"
+    default: return "Crochet"
+    }
 }

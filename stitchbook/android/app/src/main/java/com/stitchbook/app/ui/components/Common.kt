@@ -64,7 +64,11 @@ fun StepProgress(done: Int, total: Int) {
 }
 
 @Composable
-fun CraftName(craft: String): String = if (craft == "knitting") "Knitting" else "Crochet"
+fun CraftName(craft: String): String = when (craft) {
+    "knitting" -> "Knitting"
+    "sewing" -> "Sewing"
+    else -> "Crochet"
+}
 
 /** A colored block used in place of photos, so the app does not need any image assets. */
 @Composable
